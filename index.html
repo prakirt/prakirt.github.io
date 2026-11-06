@@ -69,6 +69,20 @@ main .section{padding:51px 0 11px;scroll-margin-top:24px}
  .paper-content strong{font-size:15px}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* Publication layout: compact link tags beside titles, readable venues */
+.publication{padding:23px 0;border-bottom:1px solid #d7d9d6}
+.paper-content{font-size:15px;color:#263440;line-height:1.65}
+.paper-heading{display:flex;flex-wrap:wrap;align-items:baseline;column-gap:12px;row-gap:4px;margin-bottom:7px}
+.paper-heading strong{display:inline;flex:0 1 auto;font-size:18px;line-height:1.48;color:#142432;font-weight:650;margin:0}
+.paper-links{display:inline-flex;align-items:center;gap:6px;flex-wrap:wrap}
+.paper-content .pub-link{display:inline-block;margin:0;border:0;border-radius:5px;background:#e8e9e7;padding:3px 7px;color:#155579;font:600 12px/1.45 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;letter-spacing:0;text-decoration:none}
+.paper-content .pub-link:hover{background:#d9e5ea;color:#103c57}
+.paper-content p{margin:0 0 3px}
+.paper-content .paper-authors{font-size:15px;color:#324655;font-weight:450}
+.paper-content .paper-venue{font-size:15px;color:#24313b;font-weight:700;font-style:italic}
+.paper-content .paper-note{font-size:13px;color:#4b5b67}
+@media(max-width:740px){.paper-heading strong{font-size:16px}.paper-heading{gap:5px 10px}}
 </style>
 </head>
 <body>
@@ -117,104 +131,183 @@ main .section{padding:51px 0 11px;scroll-margin-top:24px}
 <section class="section" id="working" aria-labelledby="working-heading">
 <div class="section-header"><h2 id="working-heading">Working papers</h2></div>
 <div class="paper-list">
-<article class="publication"><div class="paper-content"><strong>Right-Sizing Communication and Recommendation Set Size in AI-Assisted Search</strong>
-
-      <span>with Jing Dong and Yash Kanoria</span>
-
-      <a href="https://arxiv.org/abs/2605.23944" target="_blank" rel="noopener noreferrer">arXiv</a></div></article>
-<article class="publication"><div class="paper-content"><strong>Optimal Congestion Signaling under Customer Heterogeneity and Demand Variation</strong>
-
-      <span>with Jing Dong and Yash Kanoria</span>
-
-      <a href="https://www.dropbox.com/scl/fi/whmsgwbnqyukjuu41wam0/Signaling_Paper.pdf?rlkey=eajc4618s761lny1603awcbqy&st=qeratz4j&raw=1" target="_blank" rel="noopener noreferrer">PDF</a></div></article>
-<article class="publication"><div class="paper-content"><strong>Exponential Tail Bounds on Queues: A Confluence of Non-Asymptotic Heavy Traffic and Large Deviations</strong>
-
-      <span>with Daniela Hurtado-Lange and Siva Theja Maguluri</span>
-
-      <span>Preprint; presented at IFIP Performance 2023</span>; 
-      <a href="https://arxiv.org/abs/2306.10187" target="_blank" rel="noopener noreferrer">arXiv</a> | 
-      <a href="https://doi.org/10.1145/3649477.3649488" target="_blank" rel="noopener noreferrer">SIGMETRICS PER</a></div></article>
-<article class="publication"><div class="paper-content"><strong>Heavy Traffic Joint Queue Length Distribution without Resource Pooling</strong>
-
-      <span>with Siva Theja Maguluri</span>
-
-      <span>Major revision at Stochastic Systems; presented at IFIP Performance 2023</span>; 
-      <a href="https://arxiv.org/abs/2206.06504" target="_blank" rel="noopener noreferrer">arXiv</a> | 
-      <a href="https://doi.org/10.1145/3649477.3649487" target="_blank" rel="noopener noreferrer">SIGMETRICS PER</a></div></article>
-<article class="publication"><div class="paper-content"><strong>Adaptive Search with Backtracking for Simulation Optimization Under Stochastic Constraints</strong>
-
-      <span>with Sigrún Andradóttir</span></div></article></div>
+<article class="publication">
+<div class="paper-content">
+  <div class="paper-heading">
+    <strong>Right-Sizing Communication and Recommendation Set Size in AI-Assisted Search</strong>
+    <div class="paper-links"><a class="pub-link" href="https://arxiv.org/abs/2605.23944" target="_blank" rel="noopener noreferrer">arXiv</a></div>
+  </div>
+  <p class="paper-authors">with Jing Dong and Yash Kanoria</p>
+  
+  
+</div>
+</article>
+<article class="publication">
+<div class="paper-content">
+  <div class="paper-heading">
+    <strong>Optimal Congestion Signaling under Customer Heterogeneity and Demand Variation</strong>
+    <div class="paper-links"><a class="pub-link" href="https://www.dropbox.com/scl/fi/whmsgwbnqyukjuu41wam0/Signaling_Paper.pdf?rlkey=eajc4618s761lny1603awcbqy&st=qeratz4j&raw=1" target="_blank" rel="noopener noreferrer">PDF</a></div>
+  </div>
+  <p class="paper-authors">with Jing Dong and Yash Kanoria</p>
+  
+  
+</div>
+</article>
+<article class="publication">
+<div class="paper-content">
+  <div class="paper-heading">
+    <strong>Exponential Tail Bounds on Queues: A Confluence of Non-Asymptotic Heavy Traffic and Large Deviations</strong>
+    <div class="paper-links"><a class="pub-link" href="https://arxiv.org/abs/2306.10187" target="_blank" rel="noopener noreferrer">arXiv</a>
+<a class="pub-link" href="https://doi.org/10.1145/3649477.3649488" target="_blank" rel="noopener noreferrer">SIGMETRICS PER</a></div>
+  </div>
+  <p class="paper-authors">with Daniela Hurtado-Lange and Siva Theja Maguluri</p>
+  
+  <p class="paper-note">Preprint, presented at IFIP Performance 2023</p>
+</div>
+</article>
+<article class="publication">
+<div class="paper-content">
+  <div class="paper-heading">
+    <strong>Heavy Traffic Joint Queue Length Distribution without Resource Pooling</strong>
+    <div class="paper-links"><a class="pub-link" href="https://arxiv.org/abs/2206.06504" target="_blank" rel="noopener noreferrer">arXiv</a>
+<a class="pub-link" href="https://doi.org/10.1145/3649477.3649487" target="_blank" rel="noopener noreferrer">SIGMETRICS PER</a></div>
+  </div>
+  <p class="paper-authors">with Siva Theja Maguluri</p>
+  
+  <p class="paper-note">Major revision at Stochastic Systems, presented at IFIP Performance 2023</p>
+</div>
+</article>
+<article class="publication">
+<div class="paper-content">
+  <div class="paper-heading">
+    <strong>Adaptive Search with Backtracking for Simulation Optimization Under Stochastic Constraints</strong>
+  </div>
+  <p class="paper-authors">with Sigrún Andradóttir</p>
+  
+  
+</div>
+</article></div>
 </section>
 <section class="section" id="journals" aria-labelledby="journals-heading">
 <div class="section-header"><h2 id="journals-heading">Journal & tutorial publications</h2></div>
-<div class="paper-list"><article class="publication"><div class="paper-content"><span>Thesis</span>
-      <strong>Design and Analysis of Stochastic Processing and Matching Networks</strong>
-
-      <span>Honorable Mention for ACM SIGMETRICS 2023 Doctoral Dissertation Award</span>; 
-      <a href="https://repository.gatech.edu/entities/publication/a529c0a1-6981-4457-ae30-3507193b763d" target="_blank" rel="noopener noreferrer">Full Version</a></div></article>
-<article class="publication"><div class="paper-content"><strong>Transform Method for Stochastic Processing and Matching Networks</strong>
-
-      <span>with Sushil Mahavir Varma, Daniela Hurtado-Lange, and Siva Theja Maguluri</span>
-
-      <span>INFORMS TutORials in Operations Research</span>; 
-      <a href="https://meetings.informs.org/wordpress/annual/tutorials/" target="_blank" rel="noopener noreferrer">INFORMS tutorial page</a> | <a href="https://arxiv.org/abs/2607.22618" target="_blank" rel="noopener noreferrer">arXiv</a></div></article>
-<article class="publication"><div class="paper-content"><strong>Join-the-Shortest Queue with Abandonment: Critically Loaded and Heavily Overloaded Regimes</strong>
-
-      <span>with Martin Zubeldia and Siva Theja Maguluri</span>
-
-      <span>Mathematics of Operations Research</span>; 
-      <a href="https://pubsonline.informs.org/doi/10.1287/moor.2023.0098" target="_blank" rel="noopener noreferrer">Journal</a> | 
-      <a href="https://arxiv.org/abs/2211.15050" target="_blank" rel="noopener noreferrer">arXiv</a></div></article>
-<article class="publication"><div class="paper-content"><strong>Matching Queues with Abandonments in Quantum Switches: Stability and Throughput Analysis</strong>
-
-      <span>with Martin Zubeldia and Siva Theja Maguluri</span>
-
-      <span>Operations Research</span>; 
-      <a href="https://pubsonline.informs.org/doi/10.1287/opre.2023.0032" target="_blank" rel="noopener noreferrer">Journal</a> | 
-      <a href="https://arxiv.org/abs/2209.12324" target="_blank" rel="noopener noreferrer">arXiv</a></div></article>
-<article class="publication"><div class="paper-content"><strong>Low-Complexity Switch Scheduling Algorithms: Delay Optimality in Heavy Traffic</strong>
-
-      <span>with Siva Theja Maguluri</span>
-
-      <span>IEEE/ACM Transactions on Networking</span>; 
-      <a href="https://dl.acm.org/doi/10.1109/TNET.2021.3116606" target="_blank" rel="noopener noreferrer">Journal</a> | 
-      <a href="https://arxiv.org/abs/2004.12271" target="_blank" rel="noopener noreferrer">arXiv</a></div></article>
-<article class="publication"><div class="paper-content"><strong>On the Linear and Super-Linear Convergence of Natural Policy Gradient Algorithm</strong>
-
-      <span>with Sajad Khodadadian, Sushil Mahavir Varma, and Siva Theja Maguluri</span>
-
-      <span>Systems &amp; Control Letters</span>; 
-      <a href="https://doi.org/10.1016/j.sysconle.2022.105214" target="_blank" rel="noopener noreferrer">Journal</a> | 
-      <a href="https://arxiv.org/abs/2105.01424" target="_blank" rel="noopener noreferrer">arXiv</a>
-
-      <span>(A shorter version was accepted to the 60th IEEE Conference on Decision and Control)</span></div></article>
-<article class="publication"><div class="paper-content"><strong>Optimal AoI-Aware Scheduling and Cycles in Graphs</strong>
-
-      <span>with Bejjipuram Sombabu and Sharayu Moharir</span>
-
-      <span>IEEE Transactions on Communications</span>; 
-      <a href="https://ieeexplore.ieee.org/abstract/document/8941120" target="_blank" rel="noopener noreferrer">Journal</a></div></article></div>
+<div class="paper-list"><article class="publication">
+<div class="paper-content">
+  <div class="paper-heading">
+    <strong>Design and Analysis of Stochastic Processing and Matching Networks</strong>
+    <div class="paper-links"><a class="pub-link" href="https://repository.gatech.edu/entities/publication/a529c0a1-6981-4457-ae30-3507193b763d" target="_blank" rel="noopener noreferrer">Full text</a></div>
+  </div>
+  
+  <p class="paper-venue">Doctoral dissertation, Georgia Tech</p>
+  <p class="paper-note">Honorable Mention for ACM SIGMETRICS 2023 Doctoral Dissertation Award</p>
+</div>
+</article>
+<article class="publication">
+<div class="paper-content">
+  <div class="paper-heading">
+    <strong>Transform Method for Stochastic Processing and Matching Networks</strong>
+    <div class="paper-links"><a class="pub-link" href="https://meetings.informs.org/wordpress/annual/tutorials/" target="_blank" rel="noopener noreferrer">Tutorial</a>
+<a class="pub-link" href="https://arxiv.org/abs/2607.22618" target="_blank" rel="noopener noreferrer">arXiv</a></div>
+  </div>
+  <p class="paper-authors">with Sushil Mahavir Varma, Daniela Hurtado-Lange, and Siva Theja Maguluri</p>
+  <p class="paper-venue">TutORials in Operations Research</p>
+  
+</div>
+</article>
+<article class="publication">
+<div class="paper-content">
+  <div class="paper-heading">
+    <strong>Join-the-Shortest Queue with Abandonment: Critically Loaded and Heavily Overloaded Regimes</strong>
+    <div class="paper-links"><a class="pub-link" href="https://pubsonline.informs.org/doi/10.1287/moor.2023.0098" target="_blank" rel="noopener noreferrer">Journal</a>
+<a class="pub-link" href="https://arxiv.org/abs/2211.15050" target="_blank" rel="noopener noreferrer">arXiv</a></div>
+  </div>
+  <p class="paper-authors">with Martin Zubeldia and Siva Theja Maguluri</p>
+  <p class="paper-venue">Mathematics of Operations Research</p>
+  
+</div>
+</article>
+<article class="publication">
+<div class="paper-content">
+  <div class="paper-heading">
+    <strong>Matching Queues with Abandonments in Quantum Switches: Stability and Throughput Analysis</strong>
+    <div class="paper-links"><a class="pub-link" href="https://pubsonline.informs.org/doi/10.1287/opre.2023.0032" target="_blank" rel="noopener noreferrer">Journal</a>
+<a class="pub-link" href="https://arxiv.org/abs/2209.12324" target="_blank" rel="noopener noreferrer">arXiv</a></div>
+  </div>
+  <p class="paper-authors">with Martin Zubeldia and Siva Theja Maguluri</p>
+  <p class="paper-venue">Operations Research</p>
+  
+</div>
+</article>
+<article class="publication">
+<div class="paper-content">
+  <div class="paper-heading">
+    <strong>Low-Complexity Switch Scheduling Algorithms: Delay Optimality in Heavy Traffic</strong>
+    <div class="paper-links"><a class="pub-link" href="https://dl.acm.org/doi/10.1109/TNET.2021.3116606" target="_blank" rel="noopener noreferrer">Journal</a>
+<a class="pub-link" href="https://arxiv.org/abs/2004.12271" target="_blank" rel="noopener noreferrer">arXiv</a></div>
+  </div>
+  <p class="paper-authors">with Siva Theja Maguluri</p>
+  <p class="paper-venue">IEEE/ACM Transactions on Networking</p>
+  
+</div>
+</article>
+<article class="publication">
+<div class="paper-content">
+  <div class="paper-heading">
+    <strong>On the Linear and Super-Linear Convergence of Natural Policy Gradient Algorithm</strong>
+    <div class="paper-links"><a class="pub-link" href="https://doi.org/10.1016/j.sysconle.2022.105214" target="_blank" rel="noopener noreferrer">Journal</a>
+<a class="pub-link" href="https://arxiv.org/abs/2105.01424" target="_blank" rel="noopener noreferrer">arXiv</a></div>
+  </div>
+  <p class="paper-authors">with Sajad Khodadadian, Sushil Mahavir Varma, and Siva Theja Maguluri</p>
+  <p class="paper-venue">Systems &amp; Control Letters</p>
+  <p class="paper-note">(A shorter version was accepted to the 60th IEEE Conference on Decision and Control)</p>
+</div>
+</article>
+<article class="publication">
+<div class="paper-content">
+  <div class="paper-heading">
+    <strong>Optimal AoI-Aware Scheduling and Cycles in Graphs</strong>
+    <div class="paper-links"><a class="pub-link" href="https://ieeexplore.ieee.org/abstract/document/8941120" target="_blank" rel="noopener noreferrer">Journal</a></div>
+  </div>
+  <p class="paper-authors">with Bejjipuram Sombabu and Sharayu Moharir</p>
+  <p class="paper-venue">IEEE Transactions on Communications</p>
+  
+</div>
+</article></div>
 </section>
 <section class="section" id="conferences" aria-labelledby="conferences-heading">
 <div class="section-header"><h2 id="conferences-heading">Conference & workshop publications</h2></div>
-<div class="paper-list"><article class="publication"><div class="paper-content"><strong>Human-AI Interaction in Product Recommendation</strong>
-
-      <span>with Jing Dong and Yash Kanoria</span>
-
-      <span>NeurIPS Workshop MLxOR</span>; 
-      <a href="https://openreview.net/pdf/a565d3208052b12c25cc6213f26e0ca98d03e718.pdf" target="_blank" rel="noopener noreferrer">OpenReview</a></div></article>
-<article class="publication"><div class="paper-content"><strong>Age-of-Information Aware Scheduling</strong>
-
-      <span>with Sharayu Moharir</span>
-
-      <span>Best Paper Award</span> <span>;  IEEE SPCOM</span>; 
-      <a href="https://ieeexplore.ieee.org/document/8724448" target="_blank" rel="noopener noreferrer">Conference</a></div></article>
-<article class="publication"><div class="paper-content"><strong>On a Class of Restless Multi-armed Bandits with Deterministic Policies</strong>
-
-      <span>with Sharayu Moharir, D. Manjunath, and Aditya Gopalan</span>
-
-      <span>IEEE SPCOM</span>; 
-      <a href="https://ieeexplore.ieee.org/document/8724432" target="_blank" rel="noopener noreferrer">Conference</a></div></article></div>
+<div class="paper-list"><article class="publication">
+<div class="paper-content">
+  <div class="paper-heading">
+    <strong>Human-AI Interaction in Product Recommendation</strong>
+    <div class="paper-links"><a class="pub-link" href="https://openreview.net/pdf/a565d3208052b12c25cc6213f26e0ca98d03e718.pdf" target="_blank" rel="noopener noreferrer">OpenReview</a></div>
+  </div>
+  <p class="paper-authors">with Jing Dong and Yash Kanoria</p>
+  <p class="paper-venue">NeurIPS Workshop MLxOR</p>
+  
+</div>
+</article>
+<article class="publication">
+<div class="paper-content">
+  <div class="paper-heading">
+    <strong>Age-of-Information Aware Scheduling</strong>
+    <div class="paper-links"><a class="pub-link" href="https://ieeexplore.ieee.org/document/8724448" target="_blank" rel="noopener noreferrer">Conference</a></div>
+  </div>
+  <p class="paper-authors">with Sharayu Moharir</p>
+  <p class="paper-venue">IEEE SPCOM</p>
+  <p class="paper-note">Best Paper Award</p>
+</div>
+</article>
+<article class="publication">
+<div class="paper-content">
+  <div class="paper-heading">
+    <strong>On a Class of Restless Multi-armed Bandits with Deterministic Policies</strong>
+    <div class="paper-links"><a class="pub-link" href="https://ieeexplore.ieee.org/document/8724432" target="_blank" rel="noopener noreferrer">Conference</a></div>
+  </div>
+  <p class="paper-authors">with Sharayu Moharir, D. Manjunath, and Aditya Gopalan</p>
+  <p class="paper-venue">IEEE SPCOM</p>
+  
+</div>
+</article></div>
 </section>
 </main>
 <footer class="footer"><div class="container footer-inner"><span>Prakirt Raj Jhunjhunwala</span><span class="footer-links"><a href="#top">Back to top ↑</a><a href="mailto:prakirt2203@gmail.com">Email</a></span></div></footer>
