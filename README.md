@@ -12,4 +12,5 @@ This is my academic personal website featuring my research, publications, and co
 - Professional layout with photo and bio
 - Publication listings with links
 - Contact links (email, CV, Google Scholar, LinkedIn)
-- Dark theme optimized for readability
+- Light, high-contrast academic layout with responsive publication entries
+- Research profile photo stored in `assets/profile.jpg`
